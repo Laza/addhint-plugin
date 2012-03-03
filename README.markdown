@@ -45,4 +45,4 @@ $('.target').addHint(el, {
 <p><a href="http://docs.jquery.com/Downloading_jQuery">jQuery 1.7 or higher</a></p>
 <h2>License</h2>
 <p>Available for use in all personal or commercial projects under both <a href="MIT-LICENSE.txt">MIT</a> and <a href="GPL-LICENSE.txt">GPL licenses</a>.</p>
-<p>Copyright (c) 2012 <a href="http://lazaworx.com">Molnar Laszlo</a></p>
+<p>Copyright (c) 2012 <a href="http://lazaworx.com">Laszlo Molnar</a></p>
