@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>alignTo plugin sample</title>
+<style>
+body {
+	font:12px/1.231 Arial,Helvetica,sans-serif;
+}
+.targets a {
+	display:inline-block;
+	padding:1em;
+	margin:2em;
+	border:1px solid #ccc;
+	text-align:center;
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<div class="targets">
+	<a href="javascript:void(0)" title="The target's title attribute holds the hint. 
+	Placed below automatically if don't fit in above.">Move over this</a>
+	<a href="javascript:void(0)">... or this</a>
+	<a href="javascript:void(0)">... or this</a>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1"></script>
+<script src="../alignto-plugin/alignto.js"></script>
+<script src="addhint.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.targets > a:first').addHint();
+		$('.targets > a:nth(1)').addHint('Simple <b>HTML</b> code');
+		var el = $('<div>').text('a jQuery element').css({
+			display:'inline-block',
+			backgroundColor:'#066', 
+			color:'#fff',
+			padding:'1em'
+		}).hide().appendTo('body');
+		$('.targets > a:last').addHint(el, { 
+			posX: ALIGN_LEFT, 
+			posY: ALIGN_MIDDLE,
+			toX: ALIGN_RIGHT,
+			toY: ALIGN_MIDDLE,
+			gap: 0
+		});
+	});
+</script>
+</body>
+</html>

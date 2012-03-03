@@ -1,0 +1,41 @@
+{
+	"name": "addHint",
+	"version": "1.0",
+	"title": "jQuery addHint plugin",
+	"author": {
+		"name": "Laszlo Molnar",
+		"url": "https://github.com/Laza"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "MIT-LICENSE.txt"
+		},
+		{
+			"type": "GPLv2",
+			"url": "GPL-LICENSE.txt"
+		}
+	],
+	"dependencies": {
+		"jquery": "1.7"
+	},
+	"description": "Adds a tooltip-like popup upon hovering the mouse over an element.",
+	"keywords": [
+		"tooltip",
+		"hover",
+		"title",
+		"popup"
+	],
+	"homepage": "https://github.com/Laza/jquery-addhint",
+	"maintainers": [
+		{
+			"name": "Laszlo Molnar",
+			"url": "https://github.com/Laza"
+		}
+	],
+	"files": [
+		"addhint.js",
+		"addhint.min.js",
+		"sample.html"
+	]
+}
